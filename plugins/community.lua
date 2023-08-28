@@ -6,8 +6,9 @@ return {
 
   -- { import = "astrocommunity.colorscheme.rose-pine" },
   { import = "astrocommunity.colorscheme.catppuccin" },
-  { import = "astrocommunity/colorscheme/tokyonight-nvim" },
+  { import = "astrocommunity/colorscheme/kanagawa-nvim" },
   { import = "astrocommunity.completion.copilot-lua-cmp" },
+  { import = "astrocommunity.motion.nvim-surround" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.php" },
   { import = "astrocommunity.pack.rust" },
