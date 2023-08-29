@@ -43,10 +43,12 @@ return {
         -- disable lua_ls formatting capability if you want to use StyLua to format your lua code
         -- "lua_ls",
       },
-      timeout_ms = 1000, -- default format timeout
-      -- filter = function(client) -- fully override the default formatting function
-      --   return true
-      -- end
+      timeout_ms = 5000, -- default format timeout
+      filter = function(client) -- fully override the default formatting function
+        -- maybe something temporal but I don't like to see eslint and prettier formatting fighting
+        if client.name == "eslint_ls" and vim.bo.filetypes == "vue" then return false end
+        return true
+      end,
     },
     -- enable servers that you already have installed without mason
     servers = {
