@@ -6,10 +6,11 @@ return {
 
   -- { import = "astrocommunity.colorscheme.rose-pine" },
   { import = "astrocommunity.colorscheme.catppuccin" },
-  { import = "astrocommunity/colorscheme/kanagawa-nvim" },
+  { import = "astrocommunity.colorscheme.gruvbox-baby" },
+  -- { import = "astrocommunity/colorscheme/kanagawa-nvim" },
   { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.motion.nvim-surround" },
-  { import = "astrocommunity.pack.lua" },
+  -- { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.php" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.go" },
@@ -20,4 +21,6 @@ return {
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.dart" },
+  { import = "astrocommunity.pack.toml" },
+  { import = "astrocommunity.pack.markdown" },
 }
